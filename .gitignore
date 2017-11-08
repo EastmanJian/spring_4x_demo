@@ -1,0 +1,11 @@
+# IntelliJ .idea folder
+.idea/
+out
+
+# Spring libs
+lib/spring*
+lib/aop*
+lib/commons*
+
+
+#temp files
