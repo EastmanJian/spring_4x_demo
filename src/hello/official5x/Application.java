@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
 /**
  * The configuration metadata can be represented either by XML, Java annotations, or Java code.
  * In this HelloWorld application, the configuration metadata is represented by Java annotation and Java code.
- * For XML configuration, see example in hello.tutorialspoint.MainApp.java
+ * For XML configuration, see example in hello.tutorialspoint.MainAppPrototype.java
  */
 @Configuration
 @ComponentScan
