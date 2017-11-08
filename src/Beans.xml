@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Bean Configuration file which is an XML file and acts as a cement that glues the beans, i.e. the classes together.
+This file needs to be created under the src directory.
+
+Usually developers name this file as Beans.xml, but you are independent to choose any name you like. ou have to make
+sure that this file is available in CLASSPATH and use the same name in the main application while creating an
+application context
+
+The Beans.xml is used to assign unique IDs to different beans and to control the creation of objects with different
+values without impacting any of the Spring source files.
+
+When Spring application gets loaded into the memory, Framework makes use of the above configuration file to create all
+the beans defined and assigns them a unique ID as defined in <bean> tag. You can use <property> tag to pass the values
+of different variables used at the time of object creation.
+
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "helloWorld" class = "hello.tutorialspoint.HelloWorld">
+        <property name = "message" value = "Hello World! (from tutorialspoint.com)"/>
+    </bean>
+
+</beans>
