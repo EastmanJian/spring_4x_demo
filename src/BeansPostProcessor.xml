@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="beanExample1" class="beans.postprocessor.ExampleBean"
+          init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello Violet!"/>
+    </bean>
+
+    <bean id="beanExample2" class="beans.postprocessor.ExampleBean"
+          init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello Endora!"/>
+    </bean>
+
+    <bean class="beans.postprocessor.InitProcess"/>
+
+</beans>

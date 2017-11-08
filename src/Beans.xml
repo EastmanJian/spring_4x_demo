@@ -19,8 +19,8 @@ You can use <property> tag to pass the values of different variables used at the
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "helloWorld" class = "hello.tutorialspoint.HelloWorld">
-        <property name = "message" value = "Hello World! (from tutorialspoint.com)"/>
+    <bean id="helloWorld" class="hello.tutorialspoint.HelloWorld">
+        <property name="message" value="Hello World! (from tutorialspoint.com)"/>
     </bean>
 
 </beans>
