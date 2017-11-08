@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The BeanFactory and related interfaces, such as BeanFactoryAware, InitializingBean, DisposableBean, are still present
+in Spring for the purpose of backward compatibility with a large number of third-party frameworks that integrate
+with Spring.
+
+The BeanFactory is usually preferred where the resources are limited like mobile devices or applet-based applications.
+Thus, use an ApplicationContext unless you have a good reason for not doing so.
+-->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id = "helloWorld" class = "hello.beanfactory.HelloWorld">
+        <property name = "message" value = "Hello World!"/>
+    </bean>
+
+</beans>
