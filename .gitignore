@@ -3,6 +3,7 @@
 out
 
 # Spring libs
+lib/
 lib/spring*
 lib/aop*
 lib/commons*
