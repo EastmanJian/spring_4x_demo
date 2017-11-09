@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("BeansAnnotation.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("BeansAnnotationRequired.xml");
 
         Student student = (Student) context.getBean("student");
         System.out.println("Name : " + student.getName() );
