@@ -9,19 +9,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * This example requires the following DB environment to run.
  *   DBMS: MySQL,
  *   Host: localhost (127.0.0.1)
- *   Port: 3306
+ *   Port: 3306 (default)
  *   DB Account: root
  *   Password: password
- *   Schema: test
- *   Table (empty):
- *      CREATE TABLE Student(
- *        ID   INT NOT NULL AUTO_INCREMENT,
- *        NAME VARCHAR(20) NOT NULL,
- *        AGE  INT NOT NULL,
- *        PRIMARY KEY (ID));
+ *   Schema (DB): test
+ *   Tables: student (refer to test.sql for the DDL, they should be empty before run the demo)
  *   Java lib (additional to Spring core libs):
- *     mysql-connector-java-6.0.6.jar
- *     spring-jdbc-4.3.12.RELEASE.jar
+ *     mysql-connector-java.jar
+ *     spring-jdbc.jar
  *
  * Change the config if you ride on another DBMS.
  */
